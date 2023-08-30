@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+    padding: 100px 100px;
+    scroll-behavior: smooth                     ;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.btn {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.text h1::first-letter {
+    color: rgb(76, 246, 14);
+    font-size: 2.0em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#white {
+    background-color: white;
+}
+
+#violet {
+    background-color: violet;
+
+}
+
+#lightseagreen {
+    background-color: lightseagreen;
+}
+
+#black {
+    background-color: black;
+
+}
+
+.colors {
+    text-align: right;
+}
+
+#menu {
+    background-color: blueviolet;
+    text-align: center;
+
+}
+
+#menu li {
+    display: inline-block;
+    padding: 15px 10px;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#menu li:hover {
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.moveup{
+    text-align: center;
+    padding: 2px;
+    border: 2px solid black;
+    height: 35px;
+    width: 35px;
+    position: fixed;
+    right:20px;
+    bottom: 20px;
+    visibility: hidden;
+}
+.moveup.appear{
+    visibility: visible;
+}
+.moveup span{
+  
+   font-size: 50px;
+   font-weight: bolder;
+   cursor: pointer;
+}

@@ -1,0 +1,37 @@
+body{
+    padding: 50px 100px;
+    background: linear-gradient(to left, #74ebd5, #9face6);
+    
+}
+h1 {
+    text-align: center;
+}
+
+
+
+
+.container {
+  
+   
+    padding: 80px;
+    
+    background-color:linear-gradient(to right, rgba(116, 235, 213, 0.5), rgba(159, 172, 230, 0.6));
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
+   
+}
+.inp{
+    padding: 5px 10px;
+    margin: 10px;
+    border: 3px solid white;
+    
+}
+.inp:focus{
+border-color:linear-gradient(to right, rgba(116, 235, 213, 0.5), rgba(159, 172, 230, 0.6));
+}
+.title h1{
+    color: white;
+    font-weight: bolder;
+    text-shadow: 50px -20px 5px black;
+}

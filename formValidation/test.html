@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h2>Registration Form</h2></div>
+        <form class="form " id="form">
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" name="" id="username" placeholder="enter your name" autocomplete="off">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>ERROR MSG</small>
+            </div>
+            <div class="form-control">
+                <label>Email</label>
+                <input type="text" name="" id="email" placeholder="enter your email"autocomplete="off">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>ERROR MSG</small>
+            </div>
+            
+            <div class="form-control">
+                <label>Mobile No</label>
+                <input type="text" name="" id="mobile" placeholder="enter your mobile number"autocomplete="off">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>ERROR MSG</small>
+            </div>
+            
+            <div class="form-control">
+                <label>Password</label>
+                <input type="text" name="" id="password" placeholder="enter password"autocomplete="off">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>ERROR MSG</small>
+            </div>
+            
+            <div class="form-control">
+                <label>Confirm Password</label>
+                <input type="text" name="" id="cpassword" placeholder=" re-enter password"autocomplete="off">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>ERROR MSG</small>
+            </div>
+            <input type="submit"  value="submit" class="btn" name="">
+            
+            
+        </form>
+        <div class="welcome">
+             <h1 id="msg"></h1>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+    
+
+    
+</body>
+</html>

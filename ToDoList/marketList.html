@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market List</title>
+    <style>
+        body {
+
+            background-image: url(" backgroundImage.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            height: 200px;
+            width: 500px;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .bottom {
+        
+            position: absolute;
+            top: 150px;
+            left: 850px;
+            transform: translate(-50px, -50px);
+
+        }
+        .button{
+            background:transparent;
+            border-radius: 10px;
+        }
+        .button:hover{
+            border-color: white;
+         
+        }
+
+        .in {
+            color: black;
+            position: relative;
+            top: 35px;
+            left: 600px;
+            size: 100px;
+
+
+        }
+
+        .tl {
+            color: white;
+            position: relative;
+            top: 35px;
+            left: 620px;
+            size: 100px;
+
+
+
+
+        }
+        button{
+            margin-left: 20px;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <br><br><br><br><br><br><br>
+    <div class="container">
+        <img src="istockphoto-1316968335-170667a.jpg" alt="foff">
+        <div class="bottom">
+            DO YOUR VEGETABLE <br>
+            SHOPING FROM HERE!!
+        </div>
+    </div>
+    <div class="in">
+
+        <label for="list">make your list</label>
+        <input type="text" name="list" id="list" onfocus=" this.value=''" >
+        <button  class="button"  onclick="makelist()">ADD</button>
+    </div>
+    <div class="tl">
+        <ul id="mylist">
+            
+        </ul>
+    </div>
+    <script>
+        function makelist() {
+            var node = document.createElement("li");
+            node.textContent = document.getElementById("list").value;
+            // var btn = document.createElement("button");
+            // btn.textContent = "delete";
+            // btn.addEventListener('click', () => node.remove());
+            // node.appendChild(btn);
+             let check=document.createElement("input");
+             check.type="checkbox";
+             check.id="newinput";
+            //let what=document.getElementById("newinput").value;
+            //  if(document.getElementById("newinput").value !=null){
+            //     if(document.getElementById("newinput").value==true){
+            //         node.remove();
+            //     }
+            
+             
+             node.appendChild(check);
+
+            document.getElementById("mylist").appendChild(node);
+            //if we donot want to use next line then use onfocus in input tag properties.
+            //document.getElementById("list").value=" ";
+        
+
+        }
+    </script>
+
+</body>
+
+</html>

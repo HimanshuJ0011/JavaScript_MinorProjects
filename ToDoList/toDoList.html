@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+
+
+        <div class="container">
+            <img src="image.jpg" alt="img">
+            <div class="bottom">
+                Set what you want to do !!
+            </div>
+        </div>
+
+        <div class="in">
+
+            <label for="list"> To do list</label>
+            <input type="text" name="list" id="list" onfocus=" this.value=''">
+            <button class="button" onclick="makelist()">ADD</button>
+            <div class="tl">
+                <ul id="mylist">
+    
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function makelist() {
+            var node = document.createElement("li");
+            node.textContent = document.getElementById("list").value;
+            var btn = document.createElement("button");
+            btn.textContent = "done";
+            btn.style.background="transparent";
+            btn.addEventListener('click', () => node.style.textDecorationLine = "line-through");
+            node.appendChild(btn);
+            document.getElementById("mylist").appendChild(node);
+            //if we donot want to use next line then use onfocus in input tag properties.
+            //document.getElementById("list").value=" ";
+
+        }
+    </script>
+
+</body>
+
+</html>
